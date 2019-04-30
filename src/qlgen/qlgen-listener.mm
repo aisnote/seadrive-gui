@@ -257,7 +257,7 @@ private:
         qDebug("[QLGen] mach error %s", mach_error_string(kr));
         qWarning("[QLGen] failed to send reply");
     } else {
-        qWarning("[QLGen] reply sent");
+        // qWarning("[QLGen] reply sent");
     }
 
     mach_msg_destroy(reply_header);

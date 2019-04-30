@@ -133,7 +133,9 @@
 
 - (BOOL)askForThumbnail:(NSString *)path output:(NSString **)output
 {
-    return [self.client askForThumbnail:path output:output];
+    // For now we display no thumbnail for not-cached files.
+    return NO;
+    // return [self.client askForThumbnail:path output:output];
 }
 @end
 
